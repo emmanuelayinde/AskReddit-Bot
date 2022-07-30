@@ -1,0 +1,6 @@
+/env
+/generated
+.env
+__pycache__
+client_secrets.json
+main.py-oauth2.json
