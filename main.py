@@ -10,7 +10,7 @@ from upload_video import upload_video
 
 
 path = os.getcwd()
-generated_path =  path + "\\generated"
+generated_path =  path + "/generated"
 
 title = ''
 
@@ -55,7 +55,7 @@ while True:
 
     print('Done with creating video....................#########################################')
 
-    with open(path+"\\temp\\used.txt") as file:
+    with open(path+"/temp/used.txt") as file:
         for line in file:
             pass
         title = line
