@@ -44,28 +44,17 @@ while True:
     DAY = str(int(DAY)) + GetDaySuffix(int(DAY))
     dt_string = date.today().strftime("%A %B") + f" {DAY}"
 
-
-    # print(latest_askreddit)  
-
-    time.sleep(4)  
-
     print('Starting video creation....................#########################################')
 
-
-    time.sleep(2)  
-
+    time.sleep(1)  
 
     # Create the video itself!
     generate_askreddit_q_a()
-
-    # Video info for YouTube.
-    # This example uses the first post title.
 
     time.sleep(2)  
 
     print('Done with creating video....................#########################################')
 
-   
     with open(path+"\\temp\\used.txt") as file:
         for line in file:
             pass
@@ -84,11 +73,10 @@ while True:
 
     print(video_data)
     print("Posting Video in 2 minutes..............................###########################################")
-    time.sleep(5)
+    time.sleep(2)
     upload_video(video_data)
 
     print('Done..........................................................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#########################################')
-
 
     # Sleep until ready to post another video!
     time.sleep(60 * 60 * 6)
