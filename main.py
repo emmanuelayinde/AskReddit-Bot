@@ -12,7 +12,7 @@ from upload_video import upload_video
 path = os.getcwd()
 generated_path =  path + "/generated"
 
-title = ''
+# title = ''
 
     
 # Leave if you want to run it 24/7
@@ -65,11 +65,12 @@ while True:
 
     video_data = {
             "file": f"{path}/generated/finalVideos/final/finalVideo.mp4",
-            "title": f"{title} - AskReddit question and answer {dt_string}!",
-            "description": "#shorts\nGiving you the hottest questions of the day with funny comments!",
+            "title": f"{title}",
+            "description": f"#shorts\nGiving you the hottest questions of the day with funny comments! - #AskReddit {dt_string}!",
             "keywords": "AskReddit,redditquestion,questionandanswer",
             "privacyStatus": "public",
     }
+    print(len(video_data['title']))
 
     print(video_data)
     print("Posting Video in 2 minutes..............................###########################################")
@@ -79,4 +80,4 @@ while True:
     print('Done..........................................................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#########################################')
 
     # Sleep until ready to post another video!
-    time.sleep(60 * 60 * 6)
+    time.sleep(60 * 60 * 1)
